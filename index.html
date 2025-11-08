@@ -5,32 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La Conquista dell'Umiltà</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f5f5f5;
+    html, body {
       margin: 0;
       padding: 0;
+      height: 100%;
+      width: 100%;
     }
-    .container {
-      margin-top: 100px;
+
+    body {
+      /* imposta l’immagine di sfondo */
+      background-image: url('images/leptons.png');
+      background-size: cover;         /* riempie tutto lo schermo */
+      background-position: center;    /* centra l’immagine */
+      background-repeat: no-repeat;   /* evita ripetizioni */
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    img {
-      width: 300px;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
+
     h1 {
-      margin-top: 20px;
-      color: #333;
+      background-color: rgba(0,0,0,0.5); /* testo leggibile su sfondo chiaro */
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    p {
+      background-color: rgba(0,0,0,0.4);
+      padding: 8px 15px;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="images/wall.png" alt="Bianca">
-    <h1>Leptons</h1>
-    <p>Un album di musica dedicato a Bianca di Beaco, non-alpinista e scrittrice della montagna</p>
-  </div>
+  <h1>Leptons</h1>
+  <p>Un album di musica dedicato a Bianca di Beaco, non-alpinista e scrittrice della montagna</p>
 </body>
 </html>
