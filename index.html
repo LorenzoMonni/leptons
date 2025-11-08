@@ -3,45 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Conquista dell'Umiltà</title>
+  <title>Benvenuto</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
       width: 100%;
+      font-family: 'Montserrat', sans-serif;
     }
 
     body {
-      /* imposta l’immagine di sfondo */
       background-image: url('images/wall.png');
-      background-size: cover;         /* riempie tutto lo schermo */
-      background-position: center;    /* centra l’immagine */
-      background-repeat: no-repeat;   /* evita ripetizioni */
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5); /* semi-trasparente per leggibilità */
+      padding: 40px 60px;
+      border-radius: 15px;
+      max-width: 90%;
     }
 
     h1 {
-      background-color: rgba(0,0,0,0.5); /* testo leggibile su sfondo chiaro */
-      padding: 10px 20px;
-      border-radius: 10px;
+      font-size: 3em;
+      margin: 0 0 20px 0;
     }
 
     p {
-      background-color: rgba(0,0,0,0.4);
-      padding: 8px 15px;
-      border-radius: 8px;
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      .overlay {
+        padding: 20px 30px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Leptons</h1>
-  <p>Un album di musica dedicato a Bianca di Beaco, non-alpinista e scrittrice della montagna</p>
+  <div class="overlay">
+    <h1>La Conquistà dell'Umiltà</h1>
+    <p>Un album di musica dedicato a Bianca di Beaco, non-alpinista e scrittrice della montagna</p>
+  </div>
 </body>
 </html>
